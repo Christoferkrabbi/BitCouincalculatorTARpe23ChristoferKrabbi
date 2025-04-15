@@ -26,7 +26,7 @@ namespace BitCouincalculatorTARpe23ChristoferKrabbi
             string url = "https://data-api.coindesk.com/index/cc/v1/latest/tick?market=ccix&instruments=BTC-USD&api_key={a398491fe27ddb1ffd986003f293e46a6991327a73fd0ebbfe87229a620e7a42}";
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
-
+             
             var webResponse = request.GetResponse();
             var webStream = webResponse.GetResponseStream();
 
